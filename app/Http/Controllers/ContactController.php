@@ -12,6 +12,7 @@ class ContactController extends Controller
 {
     public function sendemail(Request $request)
     {
+        // dd($request);
         // $val = $request->validate([
         //     'name' => 'required',
         //     'phone' => 'required|numeric',

@@ -162,25 +162,25 @@
 
             var datas = $('#contact_form').serialize();
 
-            // var _token = $("input[name='_token']").val();
-            // var name = $("#contact-name").val();
-            // var phone = $("#contact-phone").val();
-            // var email = $("#contact-email").val();
-            // var subject = $("#subject").val();
-            // var message = $("#contact-message").val();
+            var _token = $("input[name='_token']").val();
+            var name = $("#contact-name").val();
+            var phone = $("#contact-phone").val();
+            var email = $("#contact-email").val();
+            var subject = $("#subject").val();
+            var message = $("#contact-message").val();
 
             $.ajax({
                url: '/sendemail',
                type: 'post',
                data: datas,
-               // data: {
-               //     _token: _token,
-               //     name: name,
-               //     phone: phone,
-               //     email: email,
-               //     subject: subject,
-               //     message: message,
-               // },
+            //    data: {
+            //        _token: _token,
+            //        name: name,
+            //        phone: phone,
+            //        email: email,
+            //        subject: subject,
+            //        message: message,
+            //    },
                prosessData: false,
                dataType: 'json',
                contenType: false,
