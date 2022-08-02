@@ -113,9 +113,9 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
-    {{-- <script src="https://www.google.com/recaptcha/api.js?&render=explicit" async defer></script> --}}
+    <script src="https://www.google.com/recaptcha/api.js?&render=explicit" async defer></script>
 
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -151,7 +151,7 @@
 
          var review_recaptcha_widget;
          var onloadCallback = function () {
-             if ($('#example1').length) {
+             if ($('#example1').length != null ) {
                  review_recaptcha_widget = grecaptcha.render('example1', {
                     'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
                  });
