@@ -32,13 +32,13 @@ class ContactController extends Controller
 
         // return back();
 
-        $validator = $request->validate([
+        $request->validate([
             'name' => 'required',
             'phone' => 'required|numeric',
             'email' => 'required|email',
             'subject' => 'required',
             'message' => 'required',
-            'g-recaptcha-response' => 'required|captcha'
+            // 'g-recaptcha-response' => 'required|captcha'
         ]
     );
 
