@@ -195,7 +195,6 @@
                   $('#emailErrorMsg').text(response.responseJSON.errors.email);
                   $('#subjectErrorMsg').text(response.responseJSON.errors.subject);
                   $('#contactErrorMsg').text(response.responseJSON.errors.message);
-                  // $('#captchaErrorMsg').text(response.responseJSON.errors.g-recaptcha-response);
                   $('#captchaErrorMsg').text('Please check reCAPTCHA');
                },
             });

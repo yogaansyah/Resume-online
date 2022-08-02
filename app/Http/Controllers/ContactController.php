@@ -39,9 +39,6 @@ class ContactController extends Controller
             'subject' => 'required',
             'message' => 'required',
             'g-recaptcha-response' => 'required|captcha'
-        ],
-        [
-           'g-recaptcha-response.required' => 'Please check your Recaptcha'
         ]
     );
 
