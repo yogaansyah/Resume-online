@@ -33,8 +33,9 @@
                             <li><i data-feather="check"></i><span>24/7 Support
                                 </span></li>
                         </ul>
-                        <a class="rn-btn" href="#"><span>DOWNLOAD MY
-                                CV</span></a>
+                        <a class="rn-btn" href="{{ route('pdf') }}">
+                            <span>DOWNLOAD MY CV</span>
+                            </a>
                     </div>
                 </div>
             </div>

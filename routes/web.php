@@ -22,6 +22,7 @@ Route::get('/', function () {
 });
 
 Route::post('/sendemail', [ContactController::class, 'sendemail'])->name('sendemail');
+Route::get('/pdf', [ContactController::class, 'pdf'])->name('pdf');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

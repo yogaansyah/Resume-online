@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     @vite('resources/js/app.js')
 
+    {{-- google recaptcha --}}
+    {{-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
+
     @stack('script')
 </head>
 
@@ -109,57 +112,76 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    {{-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
+    {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
+    <script src="https://www.google.com/recaptcha/api.js?&render=explicit" async defer></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
 
             // $('#contact_form').validate({
             //     rules: {
-            //         name: {
+            //         captcha: {
             //             required: true,
             //         },
             //         phone: {
             //             required: true,
+            //             number: true
             //         },
-            //         email: {
-            //             required: true,
-            //             email: true
+
+            //     },
+            //     messages: {
+            //         captcha: {
+            //             required: 'wew'
             //         },
-            //         subject: {
-            //             required: true,
-            //         },
-            //         message: {
-            //             required: true,
+            //         phone: {
+            //             required: 'wew',
+            //             number: 'wewwe'
             //         },
             //     }
             // });
 
+            var verifyCallback = function (response) {
+                if (response != null) {
+                    $("#example1").show();
+                }
+            };
+
+            grecaptcha.render('example1', {
+                'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
+                'callback' : verifyCallback,
+                'type':'image'
+            });
+
             $("#contact_form").on('submit', function (e) {
                 e.preventDefault();
 
-                // var _token    = $('meta[name="csrf-token"]').attr('content');
-                var _token = $("input[name='_token']").val();
-                var name = $("#contact-name").val();
-                var phone = $("#contact-phone").val();
-                var email = $("#contact-email").val();
-                var subject = $("#subject").val();
-                var message = $("#contact-message").val();
+                var datas = $('#contact_form').serialize();
+
+                // var _token = $("input[name='_token']").val();
+                // var name = $("#contact-name").val();
+                // var phone = $("#contact-phone").val();
+                // var email = $("#contact-email").val();
+                // var subject = $("#subject").val();
+                // var message = $("#contact-message").val();
 
                 $.ajax({
                     url: '/sendemail',
                     type: 'post',
-                    // method: $(this).attr('method'),
-                    data: {
-                        _token: _token,
-                        name: name,
-                        phone: phone,
-                        email: email,
-                        subject: subject,
-                        message: message,
-                    },
+                    data: datas,
+                    // data: {
+                    //     _token: _token,
+                    //     name: name,
+                    //     phone: phone,
+                    //     email: email,
+                    //     subject: subject,
+                    //     message: message,
+                    // },
                     prosessData: false,
                     dataType: 'json',
                     contenType: false,
                     success: function (data) {
+                        console.log(data);
                         $('#contact_form')[0].reset();
                         swal("Thank you for contacting me", "I will reply soon", "success");
                     },
@@ -169,6 +191,8 @@
                         $('#emailErrorMsg').text(response.responseJSON.errors.email);
                         $('#subjectErrorMsg').text(response.responseJSON.errors.subject);
                         $('#contactErrorMsg').text(response.responseJSON.errors.message);
+                        // $('#captchaErrorMsg').text(response.responseJSON.errors.g-recaptcha-response);
+                        $('#captchaErrorMsg').text('Please check reCAPTCHA');
                     },
                 });
             });

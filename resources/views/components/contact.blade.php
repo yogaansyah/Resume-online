@@ -23,7 +23,7 @@
                             </p>
                             <span class="phone">Phone: <a href="tel:01941043264">+628-13-8181-9011</a></span>
                             <span class="mail">Email: <a
-                                    href="mailto:admin@example.com">yogahendriansyah@gmail.com</a></span>
+                                    href="mailto:yogahendriansyah@gmail.com">yogahendriansyah@gmail.com</a></span>
                         </div>
                         <div class="social-area">
                             <div class="name">FIND WITH ME</div>
@@ -75,7 +75,7 @@
                                         <div class="form-group">
                                             <label for="contact-phone">Phone
                                                 Number</label>
-                                            <input class="form-control" name="phone" id="contact-phone" type="text">
+                                            <input class="form-control" name="phone" id="contact-phone" type="number">
                                             <span class="text-danger" id="phoneErrorMsg"></span>
                                         </div>
                                     </div>
@@ -105,6 +105,18 @@
                                             <textarea name="message" id="contact-message" cols="30"
                                                 rows="10"></textarea>
                                             <span class="text-danger" id="contactErrorMsg"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 mb-5">
+                                        <div class="form-group ">
+                                            {{-- <div class="g-recaptcha captcha" data-sitekey="6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g"></div> --}}
+                                            <div name='captcha' id="example1"></div>
+
+                                            {{-- {!! NoCaptcha::renderJs('en') !!}
+                                            {!! NoCaptcha::display() !!} --}}
+
+                                            <div class="text-danger" id="captchaErrorMsg"></div>
                                         </div>
                                     </div>
 

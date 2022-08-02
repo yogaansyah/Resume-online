@@ -6,6 +6,7 @@ use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ContactController extends Controller
 {
@@ -32,31 +33,40 @@ class ContactController extends Controller
         // return back();
 
         $validator = $request->validate([
-                'name' => 'required',
-                'phone' => 'required|numeric',
-                'email' => 'required|email',
-                'subject' => 'required',
-                'message' => 'required',
+            'name' => 'required',
+            'phone' => 'required|numeric',
+            'email' => 'required|email',
+            'subject' => 'required',
+            'message' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
+        ],
+        [
+           'g-recaptcha-response.required' => 'Please check your Recaptcha'
+        ]
+    );
+
+
+        $data = [
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ];
+
+        $query = Mail::to('yogahendriansyah@gmail.com')->send(new ContactMail($data));
+        if ($query) {
+            return response()->json([
+                'status' => 1,
+                'message' => 'Added Contact Records'
             ]);
+        }
+        // dd($validator);
+    }
 
-
-            $data = [
-                'name' => $request->name,
-                'phone' => $request->phone,
-                'email' => $request->email,
-                'subject' => $request->subject,
-                'message' => $request->message,
-            ];
-
-            $query = Mail::to('yogahendriansyah@gmail.com')->send(new ContactMail($data));
-            if ($query) {
-                return response()->json([
-                    'status' => 1,
-                    'message' => 'Added Contact Records'
-                ]);
-            }
-
-
-
+    public function pdf()
+    {
+        $pdf = Pdf::loadView('layout.pdf');
+        return $pdf->download('Resume-yoga.pdf');
     }
 }
