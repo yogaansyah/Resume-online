@@ -113,7 +113,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
-    <script src="https://www.google.com/recaptcha/api.js?&render=explicit" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
 
     {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
 
@@ -149,20 +149,20 @@
             }
          };
 
-         var review_recaptcha_widget;
-         var onloadCallback = function () {
-             if ($('#example1').length != null ) {
-                 review_recaptcha_widget = grecaptcha.render('example1', {
-                    'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
-                 });
-             }
-         };
+        //  var review_recaptcha_widget;
+        //  var onloadCallback = function () {
+        //      if ($('#example1').length !== 0 ) {
+        //          grecaptcha.render('example1', {
+        //             'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
+        //          });
+        //      }
+        //  };
 
-        //  grecaptcha.render('example1', {
-        //      'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
-        //      'callback' : verifyCallback,
-        //      'type':'image'
-        //  });
+         grecaptcha.render('example1', {
+             'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
+             'callback' : verifyCallback,
+             'type':'image'
+         });
 
          $("#contact_form").on('submit', function(e) {
             e.preventDefault();
