@@ -11,7 +11,7 @@
                 <div class="col-lg-5">
                     <div class="contact-about-area">
                         <div class="thumbnail">
-                            <img src="assets/images/123.jpg" alt="contact-img">
+                            <img src="../../assets/images/123.jpg" alt="contact-img">
                         </div>
                         <div class="title-area">
                             <h4 class="title">Yoga Hendriansyah</h4>

@@ -12,13 +12,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
     <!-- CSS
     ============================================ -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="../../assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="../../assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="../../assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="../../assets/css/plugins/feature.css">
     <!-- Style css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     @vite('resources/js/app.js')
 
     {{-- google recaptcha --}}
@@ -94,15 +94,15 @@
     <!-- Back to top end -->
 
     <!-- JS ============================================ -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/modernizer.min.js"></script>
-    <script src="assets/js/vendor/feather.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.js"></script>
-    <script src="assets/js/vendor/text-type.js"></script>
-    <script src="assets/js/vendor/wow.js"></script>
-    <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
+    <script src="../../assets/js/vendor/jquery.js"></script>
+    <script src="../../assets/js/vendor/modernizer.min.js"></script>
+    <script src="../../assets/js/vendor/feather.min.js"></script>
+    <script src="../../assets/js/vendor/slick.min.js"></script>
+    <script src="../../assets/js/vendor/bootstrap.js"></script>
+    <script src="../../assets/js/vendor/text-type.js"></script>
+    <script src="../../assets/js/vendor/wow.js"></script>
+    <script src="../../assets/js/vendor/aos.js"></script>
+    <script src="../../assets/js/vendor/particles.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
 
