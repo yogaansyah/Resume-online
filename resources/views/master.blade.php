@@ -140,14 +140,14 @@
             //         },
             //     }
             // });
-            var show;
+            var widgetId
             function verifyCallback(response) {
                 if (response != null) {
                     $("#example1").show();
                 }
             };
 
-            grecaptcha.render('example1', {
+            widgetId = grecaptcha.render('example1', {
                 'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
                 'callback' : verifyCallback,
                 'type':'image'
