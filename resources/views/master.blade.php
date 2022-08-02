@@ -106,97 +106,109 @@
     <!-- main JS -->
     <script src="../../assets/js/main.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
         integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    {{-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
-    {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
+    {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script> --}}
     <script src="https://www.google.com/recaptcha/api.js?&render=explicit" async defer></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
 
-            // $('#contact_form').validate({
-            //     rules: {
-            //         captcha: {
-            //             required: true,
-            //         },
-            //         phone: {
-            //             required: true,
-            //             number: true
-            //         },
+         // $('#contact_form').validate({
+         //     rules: {
+         //         captcha: {
+         //             required: true,
+         //         },
+         //         phone: {
+         //             required: true,
+         //             number: true
+         //         },
 
-            //     },
-            //     messages: {
-            //         captcha: {
-            //             required: 'wew'
-            //         },
-            //         phone: {
-            //             required: 'wew',
-            //             number: 'wewwe'
-            //         },
-            //     }
-            // });
-            var widgetId
-            function verifyCallback(response) {
-                if (response != null) {
-                    $("#example1").show();
-                }
-            };
+         //     },
+         //     messages: {
+         //         captcha: {
+         //             required: 'wew'
+         //         },
+         //         phone: {
+         //             required: 'wew',
+         //             number: 'wewwe'
+         //         },
+         //     }
+         // });
 
-            widgetId = grecaptcha.render('example1', {
-                'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
-                'callback' : verifyCallback,
-                'type':'image'
+
+        //  function verifyCallback(response) {
+        //     if (response != null) {
+        //        $("#example1").show();
+        //     }
+        //  };
+
+         var review_recaptcha_widget;
+         var recaptcha = function() {
+            if ($('#example1').length !== 0) {
+               review_recaptcha_widget = grecaptcha.render('example1', {
+                  'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
+                //   'callback': verifyCallback,
+                  'type': 'image'
+               });
+            }
+         };
+
+         // grecaptcha.render('example1', {
+         //     'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
+         //     'callback' : verifyCallback,
+         //     'type':'image'
+         // });
+
+         $("#contact_form").on('submit', function(e) {
+            e.preventDefault();
+
+            var datas = $('#contact_form').serialize();
+
+            // var _token = $("input[name='_token']").val();
+            // var name = $("#contact-name").val();
+            // var phone = $("#contact-phone").val();
+            // var email = $("#contact-email").val();
+            // var subject = $("#subject").val();
+            // var message = $("#contact-message").val();
+
+            $.ajax({
+               url: '/sendemail',
+               type: 'post',
+               data: datas,
+               // data: {
+               //     _token: _token,
+               //     name: name,
+               //     phone: phone,
+               //     email: email,
+               //     subject: subject,
+               //     message: message,
+               // },
+               prosessData: false,
+               dataType: 'json',
+               contenType: false,
+               success: function(data) {
+                  console.log(data);
+                  $('#contact_form')[0].reset();
+                  swal("Thank you for contacting me", "I will reply soon", "success");
+               },
+               error: function(response) {
+                  $('#nameErrorMsg').text(response.responseJSON.errors.name);
+                  $('#phoneErrorMsg').text(response.responseJSON.errors.phone);
+                  $('#emailErrorMsg').text(response.responseJSON.errors.email);
+                  $('#subjectErrorMsg').text(response.responseJSON.errors.subject);
+                  $('#contactErrorMsg').text(response.responseJSON.errors.message);
+                  // $('#captchaErrorMsg').text(response.responseJSON.errors.g-recaptcha-response);
+                  $('#captchaErrorMsg').text('Please check reCAPTCHA');
+               },
             });
-
-            $("#contact_form").on('submit', function (e) {
-                e.preventDefault();
-
-                var datas = $('#contact_form').serialize();
-
-                // var _token = $("input[name='_token']").val();
-                // var name = $("#contact-name").val();
-                // var phone = $("#contact-phone").val();
-                // var email = $("#contact-email").val();
-                // var subject = $("#subject").val();
-                // var message = $("#contact-message").val();
-
-                $.ajax({
-                    url: '/sendemail',
-                    type: 'post',
-                    data: datas,
-                    // data: {
-                    //     _token: _token,
-                    //     name: name,
-                    //     phone: phone,
-                    //     email: email,
-                    //     subject: subject,
-                    //     message: message,
-                    // },
-                    prosessData: false,
-                    dataType: 'json',
-                    contenType: false,
-                    success: function (data) {
-                        console.log(data);
-                        $('#contact_form')[0].reset();
-                        swal("Thank you for contacting me", "I will reply soon", "success");
-                    },
-                    error: function (response) {
-                        $('#nameErrorMsg').text(response.responseJSON.errors.name);
-                        $('#phoneErrorMsg').text(response.responseJSON.errors.phone);
-                        $('#emailErrorMsg').text(response.responseJSON.errors.email);
-                        $('#subjectErrorMsg').text(response.responseJSON.errors.subject);
-                        $('#contactErrorMsg').text(response.responseJSON.errors.message);
-                        // $('#captchaErrorMsg').text(response.responseJSON.errors.g-recaptcha-response);
-                        $('#captchaErrorMsg').text('Please check reCAPTCHA');
-                    },
-                });
-            });
-        });
+         });
+      });
     </script>
 </body>
 
