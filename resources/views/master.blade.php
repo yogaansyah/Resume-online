@@ -141,7 +141,7 @@
             //     }
             // });
 
-            var verifyCallback = function (response) {
+            function verifyCallback(response) {
                 if (response != null) {
                     $("#example1").show();
                 }
