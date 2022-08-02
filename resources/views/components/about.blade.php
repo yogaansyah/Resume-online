@@ -7,7 +7,7 @@
                     <div class="image-area shadow-none padding-none" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-delay="100" data-aos-once="true">
                         <div class="thumbnail">
-                            <img src="assets/images/yogarompi.jpg" alt="Personal Portfolio Image">
+                            <img src="../../assets/images/yogarompi.jpg" alt="Personal Portfolio Image">
                         </div>
                     </div>
                 </div>

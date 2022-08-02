@@ -10,7 +10,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/portfolio/sosial-network.png" alt="Sosial Network Images">
+                                    <img src="../../assets/images/portfolio/sosial-network.png" alt="Sosial Network Images">
                                 </a>
                             </div>
                             <div class="content">
@@ -41,7 +41,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/portfolio/inventory.png" alt="Personal Portfolio Images">
+                                    <img src="../../assets/images/portfolio/inventory.png" alt="Personal Portfolio Images">
                                 </a>
                             </div>
                             <div class="content">
@@ -72,7 +72,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/portfolio/ecommerce.png" alt="Personal Portfolio Images">
+                                    <img src="../../assets/images/portfolio/ecommerce.png" alt="Personal Portfolio Images">
                                 </a>
                             </div>
                             <div class="content">

@@ -2,7 +2,7 @@
     <div class="col-lg-6">
         <div class="header-left">
             <div class="header-thumbnail">
-                <img src="assets/images/yogajas.jpg" alt="">
+                <img src="../../assets/images/yogajas.jpg" alt="">
             </div>
             <div class="header-info-content">
                 <h4 class="title">Yoga Hendriansyah, S.H</h4>

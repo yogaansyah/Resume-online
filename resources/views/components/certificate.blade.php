@@ -11,7 +11,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/certificate/Sertifikat Web Design.jpg" alt="web design">
+                                    <img src="../../assets/images/certificate/Sertifikat Web Design.jpg" alt="web design">
                                 </a>
                             </div>
                             <div class="content">
@@ -46,7 +46,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/certificate/Sertifikat Web Programming.jpg"
+                                    <img src="../../assets/images/certificate/Sertifikat Web Programming.jpg"
                                         alt="web programming">
                                 </a>
                             </div>
@@ -81,7 +81,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/certificate/Sertifikat Laravel Framework.jpg" alt="Personal Portfolio Images">
+                                    <img src="../../assets/images/certificate/Sertifikat Laravel Framework.jpg" alt="Personal Portfolio Images">
                                 </a>
                             </div>
                             <div class="content">
@@ -116,7 +116,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="javascript:void(0)">
-                                    <img src="assets/images/certificate/Sertifikat LIDO.jpg" alt="Personal Portfolio Images">
+                                    <img src="../../assets/images/certificate/Sertifikat LIDO.jpg" alt="Personal Portfolio Images">
                                 </a>
                             </div>
                             <div class="content">
