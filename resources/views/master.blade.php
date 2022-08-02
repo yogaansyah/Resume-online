@@ -113,9 +113,11 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
-    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+    {{-- <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script> --}}
 
-    {{-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> --}}
+    <script src="https://www.google.com/recaptcha/api.js"
+        async defer>
+    </script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -143,26 +145,17 @@
          // });
 
 
-         function verifyCallback(response) {
-            if (response != null) {
-               $("#example1").show();
-            }
-         };
-
-        //  var review_recaptcha_widget;
-        //  var onloadCallback = function () {
-        //      if ($('#example1').length !== 0 ) {
-        //          grecaptcha.render('example1', {
-        //             'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
-        //          });
-        //      }
+        //  function verifyCallback(response) {
+        //     if (response != null) {
+        //        $("#example1").show();
+        //     }
         //  };
 
-         grecaptcha.render('example1', {
-             'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
-             'callback' : verifyCallback,
-             'type':'image'
-         });
+        //  grecaptcha.render('example1', {
+        //      'sitekey': '6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g',
+        //      'callback' : verifyCallback,
+        //      'type':'image'
+        //  });
 
          $("#contact_form").on('submit', function(e) {
             e.preventDefault();
