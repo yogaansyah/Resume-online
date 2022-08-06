@@ -21,11 +21,11 @@
                                             <div class="heading">
                                                 <div class="title">
                                                     <h4>
-                                                        Faculty of Law
+                                                        University Pancasila, Jakarta
                                                     </h4>
-                                                    <i> study program civil law</i>
+                                                    <i> Faculty of Law </i>
                                                     <span>
-                                                        University Pancasila, Jakarta (2014 - 2020)
+                                                        study program civil law (2014 - 2020)
                                                     </span>
                                                 </div>
                                                 <div class="date-of-time">
@@ -317,9 +317,9 @@
                             </h6>
                             <div class="progress">
                                 <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s"
-                                    role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0"
+                                    role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
                                     aria-valuemax="100">
-                                    <span class="percent-label">70%</span>
+                                    <span class="percent-label">80%</span>
                                 </div>
                             </div>
                         </div>
