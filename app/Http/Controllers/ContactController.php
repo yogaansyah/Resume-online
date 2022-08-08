@@ -64,7 +64,7 @@ class ContactController extends Controller
 
     public function pdf()
     {
-        $pdf = Pdf::loadView('layout.pdf2');
+        $pdf = Pdf::loadView('layout.pdf');
         return $pdf->download('Resume-yoga.pdf');
         // return view('layout.pdf2');
     }
