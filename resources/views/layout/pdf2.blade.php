@@ -15,10 +15,9 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    {{--
-    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/common.css" /> --}}
-    {{-- <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/fonts.css" /> --}}
-    {{--
+
+    {{-- <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/Page1.css" /> --}}
 
     <style>
