@@ -17,6 +17,11 @@ use App\Http\Controllers\ContactController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+// Route::get('/', function () {
+//     return view('layout.pdf2');
+// });
+
+
 Route::get('/', function () {
     return view('master');
 });

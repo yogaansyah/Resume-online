@@ -52,6 +52,7 @@
                 <div class="page1-small-text-body12 layout">EXPERIENCE</div>
                 <div class="page1-flex layout3">
                     <div class="page1-small-text-body21 layout">PT Anugrah Inti Artha Mandiri (Creat Sign)</div>
+
                     <div class="page1-small-text-body3-box layout">
                         <pre class="page1-small-text-body3">
 As a staff Programming
@@ -59,33 +60,29 @@ As a staff Programming
                     </div>
                     <div class="page1-block9 layout">
                         <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout">
-                        </div>
+                            class="page1-icon layout"></div>
                         <div class="page1-small-text-body4 layout">
                             Developing and Rebuild a Administration web program for Company (Creat Sign).
                         </div>
                     </div>
-                    <div class="page1-block9 layout1">
+                    <div class="page1-block9 layout">
                         <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout">
-                        </div>
+                            class="page1-icon layout"></div>
                         <div class="page1-small-text-body5 layout">
                             Creating and developing a E-Catalog web program for PT Agya Makmur.
                         </div>
                     </div>
-                    <div class="page1-block9 layout2">
+                    <div class="page1-block9 layout">
                         <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout">
-                        </div>
+                            class="page1-icon layout"></div>
                         <div class="page1-small-text-body6 layout">
                             Creating and developing a Ecommerce web program with a team for University of Muhammadiyah
                             Bandung.
                         </div>
                     </div>
-                    <div class="page1-block9 layout3">
+                    <div class="page1-block9 layout">
                         <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout">
-                        </div>
+                            class="page1-icon layout"></div>
                         <div class="page1-small-text-body7 layout">
                             Creating and developing a Digital Passenger (Dipass) web program with a team for Kementerian
                             Perhubungan
@@ -136,13 +133,13 @@ As a Freelance Website
                         <div class="page1-small-text-body16 layout">(2018)</div>
                     </div>
                     <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)" class="page1-icon layout1">
-                        </div>
+                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
+                            class="page1-icon layout1"></div>
                         <div class="page1-small-text-body17 layout">As Public Relation (PR)</div>
                     </div>
                     <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)" class="page1-icon layout2">
-                        </div>
+                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
+                            class="page1-icon layout2"></div>
                         <div class="page1-small-text-body18 layout">and Liasion Officer</div>
                     </div>
                 </div>
@@ -152,13 +149,13 @@ As a Freelance Website
                         <div class="page1-small-text-body20 layout">(2017)</div>
                     </div>
                     <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)" class="page1-icon layout3">
-                        </div>
+                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
+                            class="page1-icon layout3"></div>
                         <div class="page1-small-text-body25 layout">As Public Relation (PR)</div>
                     </div>
                     <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)" class="page1-icon layout4">
-                        </div>
+                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
+                            class="page1-icon layout4"></div>
                         <div class="page1-small-text-body26 layout">and Documentation</div>
                     </div>
                 </div>
@@ -168,8 +165,8 @@ As a Freelance Website
                         <div class="page1-small-text-body28 layout">(2013)</div>
                     </div>
                     <div class="page1-block18 layout1">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)" class="page1-icon layout5">
-                        </div>
+                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
+                            class="page1-icon layout5"></div>
                         <div class="page1-small-text-body29 layout">Security Section</div>
                     </div>
                 </div>

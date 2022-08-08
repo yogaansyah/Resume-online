@@ -162,13 +162,12 @@
 }
 .page1-small-text-body3-box.layout {
   position: relative;
-  margin: 3px 0px 0px;
 }
 .page1-small-text-body3 {
   overflow: visible;
   margin-top: 0px;
-  margin-bottom: 0px;
-  margin: 0px;
+  margin-bottom: -10px;
+  /* margin: 0px; */
   font: italic 300 12px/1.2 "Poppins", Helvetica, Arial, serif;
   color: black;
   letter-spacing: 0px;
@@ -179,7 +178,6 @@
 }
 .page1-block9.layout {
   position: relative;
-  margin: 1.5px 0px 0px;
 }
 .page1-icon {
   background: var(--src) center center/cover no-repeat;
@@ -202,9 +200,6 @@
 .page1-small-text-body4.layout {
   position: relative;
 }
-.page1-block9.layout1 {
-  position: relative;
-}
 .page1-small-text-body5 {
   display: flex;
   align-items: center;
@@ -216,9 +211,6 @@
 .page1-small-text-body5.layout {
   position: relative;
 }
-.page1-block9.layout2 {
-  position: relative;
-}
 .page1-small-text-body6 {
   display: flex;
   align-items: center;
@@ -228,9 +220,6 @@
   letter-spacing: 0px;
 }
 .page1-small-text-body6.layout {
-  position: relative;
-}
-.page1-block9.layout3 {
   position: relative;
 }
 .page1-small-text-body7 {
@@ -258,8 +247,8 @@
 .page1-small-text-body22 {
   overflow: visible;
   margin-top: 0px;
-  margin-bottom: 0px;
-  margin: 0px;
+  margin-bottom: -10px;
+  /* margin: 0px; */
   font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
   color: black;
   letter-spacing: 0px;
@@ -267,11 +256,10 @@
 }
 .page1-small-text-body31-box {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .page1-small-text-body31-box.layout {
   position: relative;
-  margin: 1.5px 0px 0px;
 }
 .page1-small-text-body31 {
   overflow: visible;
