@@ -6,17 +6,219 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    {{--
-    <link rel="stylesheet" type="text/css"
+
+    {{-- <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" /> --}}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/common.css" />
-    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/fonts.css" />
-    {{-- <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/Page1.css" /> --}}
+    {{--
+    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/common.css" /> --}}
+    {{-- <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/fonts.css" /> --}}
+    {{--
+    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/Page1.css" /> --}}
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        figure {
+            display: block;
+            font-size: 1em;
+            font-weight: normal;
+            margin: 0;
+            border-width: 0;
+            opacity: 1;
+        }
+
+        ul,
+        ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: block;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+                "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+                monospace;
+        }
+
+        @media (max-width: 99999px) {
+            .max\:show {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .xxxl\:show {
+                display: none;
+            }
+
+            .xxl\:show {
+                display: none;
+            }
+
+            .xl\:show {
+                display: none;
+            }
+
+            .lg\:show {
+                display: none;
+            }
+
+            .md\:show {
+                display: none;
+            }
+
+            .sm\:show {
+                display: none;
+            }
+
+            .xs\:show {
+                display: none;
+            }
+
+            .max\:hide {
+                display: none;
+            }
+        }
+
+        @media (max-width: 2999px) {
+            .xxxl\:show {
+                display: flex;
+            }
+
+            .xxxl\:hide {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1919px) {
+            .xxl\:show {
+                display: flex;
+            }
+
+            .xxl\:hide {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1399px) {
+            .xl\:show {
+                display: flex;
+            }
+
+            .xl\:hide {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .lg\:show {
+                display: flex;
+            }
+
+            .lg\:hide {
+                display: none;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .md\:show {
+                display: flex;
+            }
+
+            .md\:hide {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .sm\:show {
+                display: flex;
+            }
+
+            .sm\:hide {
+                display: none;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .xs\:show {
+                display: flex;
+            }
+
+            .xs\:hide {
+                display: none;
+            }
+        }
+
+        .headroom {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10000;
+
+            will-change: transform;
+            transition: transform 200ms linear;
+        }
+
+        .headroom--pinned {
+            transform: translateY(0%);
+        }
+
+        .headroom--unpinned {
+            transform: translateY(-100%);
+        }
+
+    </style>
+
+    <style>
+        /* fonts.css */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        @font-face {
+            font-family: "FontAwesome";
+            font-weight: normal;
+            font-style: normal;
+            src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+            src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+        }
+
+    </style>
 
     <style>
         /* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
