@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        {{-- href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    {{-- <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> --}}
+    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/common.css" />
     <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/Page1.css" /> --}}
+    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/Page1.css" />
 
-    <style>
+    {{-- <style>
         /* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
         .page1-block {
         display: flex;
@@ -859,7 +859,7 @@
         margin: 154.5px 0px 0px;
         }
 
-    </style>
+    </style> --}}
 
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
