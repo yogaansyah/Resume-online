@@ -384,6 +384,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
 
         <p class=MsoNormal style='margin-top:0cm;margin-right:25.45pt;margin-bottom:
 0cm;margin-left:0cm'><b><i><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></i></b></p>
+        <hr>
 
         <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
             style='width:100.0%;background:white;border-collapse:collapse'>
@@ -402,7 +403,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
   0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify'><b><span
                                 style='font-size:12.0pt;font-family:"Calibri",sans-serif;color:black'>Simple
                                 Social Network</span></b></p>
-                    <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
+                    <p class=MsoBodyText style='margin-top:.1pt;margin-right:0cm;margin-bottom:
   0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify'><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif;color:black'><a
                                 href="http://yoga-social-network.herokuapp.com/">http://yoga-social-network.herokuapp.com</a></span>
