@@ -75,7 +75,7 @@
             </ul>
             <ul class="rn-header-content two">
                 <li><span class="overhead">BIRTHDAY</span>27 April 1996</li>
-                <li><span class="overhead">LOCATION</span>Mampang Prapatan, Jakarta Selatan, Indonesia</li>
+                <li><span class="overhead">LOCATION</span>Jakarta Selatan, Indonesia</li>
             </ul>
         </div>
     </div>
