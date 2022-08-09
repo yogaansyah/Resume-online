@@ -382,8 +382,6 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
             </tr>
         </table>
 
-        /* <p class=MsoNormal style='margin-top:0cm;margin-right:25.45pt;margin-bottom:
-0cm;margin-left:0cm'><b><i><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></i></b></p> */
         <hr>
         <br>
         <br>
