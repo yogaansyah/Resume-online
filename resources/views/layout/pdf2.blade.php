@@ -1,1420 +1,1486 @@
 <!DOCTYPE html>
 <html>
-<!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-
-    {{-- <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" /> --}}
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-    {{-- <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/common.css" />
-    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="../../../pdf_yoga/css/Page1.css" /> --}}
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        hr,
-        p,
-        figure {
-            display: block;
-            font-size: 1em;
-            font-weight: normal;
-            margin: 0;
-            border-width: 0;
-            opacity: 1;
-        }
-
-        ul,
-        ul {
-            display: block;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            display: block;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-                "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-                monospace;
-        }
-
-        @media (max-width: 99999px) {
-            .max\:show {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .xxxl\:show {
-                display: none;
-            }
-
-            .xxl\:show {
-                display: none;
-            }
-
-            .xl\:show {
-                display: none;
-            }
-
-            .lg\:show {
-                display: none;
-            }
-
-            .md\:show {
-                display: none;
-            }
-
-            .sm\:show {
-                display: none;
-            }
-
-            .xs\:show {
-                display: none;
-            }
-
-            .max\:hide {
-                display: none;
-            }
-        }
-
-        @media (max-width: 2999px) {
-            .xxxl\:show {
-                display: flex;
-            }
-
-            .xxxl\:hide {
-                display: none;
-            }
-        }
-
-        @media (max-width: 1919px) {
-            .xxl\:show {
-                display: flex;
-            }
-
-            .xxl\:hide {
-                display: none;
-            }
-        }
-
-        @media (max-width: 1399px) {
-            .xl\:show {
-                display: flex;
-            }
-
-            .xl\:hide {
-                display: none;
-            }
-        }
-
-        @media (max-width: 1199px) {
-            .lg\:show {
-                display: flex;
-            }
-
-            .lg\:hide {
-                display: none;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .md\:show {
-                display: flex;
-            }
-
-            .md\:hide {
-                display: none;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .sm\:show {
-                display: flex;
-            }
-
-            .sm\:hide {
-                display: none;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .xs\:show {
-                display: flex;
-            }
-
-            .xs\:hide {
-                display: none;
-            }
-        }
-
-        .headroom {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 10000;
-
-            will-change: transform;
-            transition: transform 200ms linear;
-        }
-
-        .headroom--pinned {
-            transform: translateY(0%);
-        }
-
-        .headroom--unpinned {
-            transform: translateY(-100%);
-        }
-
-    </style>
-
-    <style>
-        /* fonts.css */
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        @font-face {
-            font-family: "FontAwesome";
-            font-weight: normal;
-            font-style: normal;
-            src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
-            src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
-                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
-                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
-                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
-                url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
-        }
-
-    </style>
-
-    <style>
-        /* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
-        .page1-block {
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-        }
-
-        .page1-block.layout {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .page1-flex {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .page1-flex.layout11 {
-            position: relative;
-            flex-grow: 1;
-            margin: 0px 0px 19px;
-        }
-
-        .page1-flex.layout1 {
-            position: relative;
-        }
-
-        .page1-image {
-            background: var(--src) center center/cover no-repeat;
-            border: 1px solid black;
-            border-radius: 10px 10px 10px 10px;
-        }
-
-        .page1-image.layout {
-            position: relative;
-            height: 108px;
-            width: 91px;
-            min-width: 91px;
-            margin: 0px auto;
-        }
-
-        .page1-big-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font: 700 28px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: center;
-            letter-spacing: 0px;
-        }
-
-        .page1-big-title.layout {
-            position: relative;
-            margin: 8px 0px 0px;
-        }
-
-        .page1-flex.layout {
-            position: relative;
-            margin: 10.5px 15px 0px;
-        }
-
-        .page1-highlights {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font: 18px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: center;
-            letter-spacing: 0px;
-        }
-
-        .page1-highlights.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: center;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body.layout {
-            position: relative;
-            margin: 4px 0px 0px;
-        }
-
-        .page1-small-text-body1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font: 12px/1 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: center;
-            letter-spacing: 3.18px;
-            opacity: 0.7;
-        }
-
-        .page1-small-text-body1.layout {
-            position: relative;
-            margin: 5.5px 15px 0px;
-        }
-
-        .page1-line {
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        .page1-line.layout {
-            position: relative;
-            height: 1px;
-            margin: 3px 15px 0px;
-        }
-
-        .page1-flex.layout2 {
-            position: relative;
-            margin: 5px 15px 0px;
-        }
-
-        .page1-small-text-body11 {
-            display: flex;
-            align-items: center;
-            font: italic 700 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 2.4px;
-        }
-
-        .page1-small-text-body11.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body2 {
-            display: flex;
-            align-items: center;
-            font: 12px/1 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body2.layout {
-            position: relative;
-            margin: 3px 0px 0px;
-        }
-
-        .page1-line.layout1 {
-            position: relative;
-            height: 1px;
-            margin: 2px 0px 0px;
-        }
-
-        .page1-flex.layout5 {
-            position: relative;
-            margin: 5px 15px 0px;
-        }
-
-        .page1-small-text-body12 {
-            display: flex;
-            align-items: center;
-            font: italic 700 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 2.4px;
-        }
-
-        .page1-small-text-body12.layout {
-            position: relative;
-        }
-
-        .page1-flex.layout3 {
-            position: relative;
-            margin: 3px 0px 0px;
-        }
-
-        .page1-small-text-body21 {
-            display: flex;
-            align-items: center;
-            font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body21.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body3-box {
-            display: flex;
-            align-items: center;
-        }
-
-        .page1-small-text-body3-box.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body3 {
-            overflow: visible;
-            margin-top: 0px;
-            margin-bottom: -10px;
-            /* margin: 0px; */
-            font: italic 300 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 0px;
-            white-space: pre-wrap;
-        }
-
-        .page1-block9 {
-            display: flex;
-        }
-
-        .page1-block9.layout {
-            position: relative;
-        }
-
-        .page1-icon {
-            background: var(--src) center center/cover no-repeat;
-        }
-
-        .page1-icon.layout {
-            position: relative;
-            height: 10px;
-            width: 10px;
-            min-width: 10px;
-            margin: 0px 0px 2px;
-        }
-
-        .page1-small-text-body4 {
-            display: flex;
-            align-items: center;
-            font: 12px/1 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body4.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body5 {
-            display: flex;
-            align-items: center;
-            font: 12px/1 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body5.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body6 {
-            display: flex;
-            align-items: center;
-            font: 12px/1 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body6.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body7 {
-            display: flex;
-            align-items: center;
-            font: 12px/1 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body7.layout {
-            position: relative;
-        }
-
-        .page1-flex.layout4 {
-            position: relative;
-            margin: 3px 0px 0px;
-        }
-
-        .page1-small-text-body22-box {
-            display: flex;
-            align-items: center;
-        }
-
-        .page1-small-text-body22-box.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body22 {
-            overflow: visible;
-            margin-top: 0px;
-            margin-bottom: -10px;
-            /* margin: 0px; */
-            font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 0px;
-            white-space: pre-wrap;
-        }
-
-        .page1-small-text-body31-box {
-            display: flex;
-            /* align-items: center; */
-        }
-
-        .page1-small-text-body31-box.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body31 {
-            overflow: visible;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin: 0px;
-            font: italic 300 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-            white-space: pre-wrap;
-        }
-
-        .page1-small-text-body8 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body8.layout {
-            position: relative;
-        }
-
-        .page1-line.layout2 {
-            position: relative;
-            height: 1px;
-            margin: 2px 0px 0px;
-        }
-
-        .page1-flex.layout7 {
-            position: relative;
-            margin: 5px 15px 0px;
-        }
-
-        .page1-small-text-body13 {
-            display: flex;
-            align-items: center;
-            font: italic 700 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 2.4px;
-        }
-
-        .page1-small-text-body13.layout {
-            position: relative;
-        }
-
-        .page1-flex.layout6 {
-            position: relative;
-            margin: 3px 0px 0px;
-        }
-
-        .page1-flex1 {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .page1-flex1.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body23 {
-            display: flex;
-            align-items: center;
-            font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body23.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body9 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body9.layout {
-            position: relative;
-            margin: 1.5px 0px;
-        }
-
-        .page1-small-text-body41 {
-            display: flex;
-            align-items: center;
-            font: 10px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body41.layout {
-            position: relative;
-        }
-
-        .page1-flex2 {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .page1-flex2.layout {
-            position: relative;
-            margin: 3px 0px 0px;
-        }
-
-        .page1-small-text-body24 {
-            display: flex;
-            align-items: center;
-            font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body24.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body10 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body10.layout {
-            position: relative;
-        }
-
-        .page1-line.layout3 {
-            position: relative;
-            height: 1px;
-            margin: 2px 0px 0px;
-        }
-
-        .page1-flex.layout8 {
-            position: relative;
-            margin: 5px 15px 0px;
-        }
-
-        .page1-small-text-body14 {
-            display: flex;
-            align-items: center;
-            font: italic 700 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 2.4px;
-        }
-
-        .page1-small-text-body14.layout {
-            position: relative;
-        }
-
-        .page1-block16 {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .page1-block16.layout {
-            position: relative;
-            margin: 1.5px 0px 0px;
-        }
-
-        .page1-block17 {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .page1-block17.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body15 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body15.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body16 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body16.layout {
-            position: relative;
-            margin: 1.5px 0px;
-        }
-
-        .page1-block18 {
-            display: flex;
-        }
-
-        .page1-block18.layout {
-            position: relative;
-        }
-
-        .page1-icon.layout1 {
-            position: relative;
-            height: 10px;
-            width: 10px;
-            min-width: 10px;
-            margin: 4px 0px;
-        }
-
-        .page1-small-text-body17 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body17.layout {
-            position: relative;
-        }
-
-        .page1-icon.layout2 {
-            position: relative;
-            height: 10px;
-            width: 10px;
-            min-width: 10px;
-            margin: 4px 0px;
-        }
-
-        .page1-small-text-body18 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body18.layout {
-            position: relative;
-        }
-
-        .page1-block16.layout1 {
-            position: relative;
-        }
-
-        .page1-small-text-body19 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body19.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body20 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body20.layout {
-            position: relative;
-            margin: 1.5px 0px;
-        }
-
-        .page1-icon.layout3 {
-            position: relative;
-            height: 10px;
-            width: 10px;
-            min-width: 10px;
-            margin: 4px 0px;
-        }
-
-        .page1-small-text-body25 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body25.layout {
-            position: relative;
-        }
-
-        .page1-icon.layout4 {
-            position: relative;
-            height: 10px;
-            width: 10px;
-            min-width: 10px;
-            margin: 4px 0px;
-        }
-
-        .page1-small-text-body26 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body26.layout {
-            position: relative;
-        }
-
-        .page1-block19 {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .page1-block19.layout {
-            position: relative;
-        }
-
-        .page1-block17.layout1 {
-            position: relative;
-            flex-grow: 1;
-            margin: 0px 0px 13px;
-        }
-
-        .page1-small-text-body27 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body27.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body28 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body28.layout {
-            position: relative;
-            margin: 1.5px 0px;
-        }
-
-        .page1-block18.layout1 {
-            position: absolute;
-            top: 18px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-        }
-
-        .page1-icon.layout5 {
-            position: relative;
-            height: 10px;
-            width: 10px;
-            min-width: 10px;
-            margin: 4px 0px;
-        }
-
-        .page1-small-text-body29 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body29.layout {
-            position: relative;
-        }
-
-        .page1-line.layout4 {
-            position: relative;
-            height: 1px;
-            margin: 5px 0px 0px;
-        }
-
-        .page1-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .page1-group.layout1 {
-            position: relative;
-            height: 155.5px;
-            margin: 0.5px 15px 0px;
-        }
-
-        .page1-small-text-body110 {
-            display: flex;
-            align-items: center;
-            font: italic 700 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            letter-spacing: 2.4px;
-        }
-
-        .page1-small-text-body110.layout {
-            position: absolute;
-            top: 0px;
-            bottom: 140.5px;
-            left: 0px;
-            right: 0px;
-        }
-
-        .page1-flex.layout9 {
-            position: absolute;
-            top: 16.5px;
-            bottom: 88px;
-            left: 0px;
-            right: 0px;
-        }
-
-        .page1-block14 {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .page1-block14.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body210 {
-            display: flex;
-            align-items: center;
-            font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body210.layout {
-            position: relative;
-            flex: 0 0 auto;
-        }
-
-        .page1-small-text-body30 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body30.layout {
-            position: relative;
-            flex: 0 0 auto;
-            margin: 1.5px 0px;
-        }
-
-        .page1-flex-item {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            flex: 0 0 auto;
-            min-height: 18px;
-        }
-
-        .page1-small-text-body51 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: #3964ff;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body51.layout {
-            position: relative;
-            flex-grow: 1;
-        }
-
-        .page1-small-text-body61 {
-            display: flex;
-            align-items: center;
-            font: 200 10px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body61.layout {
-            position: relative;
-        }
-
-        .page1-flex.layout10 {
-            position: absolute;
-            top: 62.5px;
-            bottom: 42px;
-            left: 0px;
-            right: 0px;
-        }
-
-        .page1-flex3 {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .page1-flex3.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body211 {
-            display: flex;
-            align-items: center;
-            font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body211.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body32 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body32.layout {
-            position: relative;
-            margin: 1.5px 0px;
-        }
-
-        .page1-small-text-body52 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: #3964ff;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body52.layout {
-            position: relative;
-            flex-grow: 1;
-        }
-
-        .page1-small-text-body62 {
-            display: flex;
-            align-items: center;
-            font: 200 10px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body62.layout {
-            position: relative;
-        }
-
-        .page1-group.layout {
-            position: absolute;
-            top: 0px;
-            height: 46px;
-            left: 0px;
-            right: 0px;
-            margin: 108.5px 0px 1px;
-        }
-
-        .page1-flex4 {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .page1-flex4.layout {
-            position: absolute;
-            top: 0px;
-            bottom: 28px;
-            left: 0px;
-            right: 0px;
-        }
-
-        .page1-small-text-body212 {
-            display: flex;
-            align-items: center;
-            font: 600 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body212.layout {
-            position: relative;
-        }
-
-        .page1-small-text-body33 {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: right;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body33.layout {
-            position: relative;
-            margin: 1.5px 0px;
-        }
-
-        .page1-small-text-body53 {
-            display: flex;
-            align-items: center;
-            font: 12px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: #3964ff;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body53.layout {
-            position: absolute;
-            top: 15px;
-            bottom: 13px;
-            left: 0px;
-            right: 0px;
-        }
-
-        .page1-small-text-body63 {
-            display: flex;
-            align-items: center;
-            font: 200 10px/1.2 "Poppins", Helvetica, Arial, serif;
-            color: black;
-            text-align: justify;
-            letter-spacing: 0px;
-        }
-
-        .page1-small-text-body63.layout {
-            position: absolute;
-            top: 31px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-        }
-
-        .page1-line.layout5 {
-            position: absolute;
-            top: 0px;
-            height: 1px;
-            left: 0px;
-            right: 0px;
-            margin: 154.5px 0px 0px;
-        }
-
-    </style>
-
-    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 
-<body style="display: flex; flex-direction: column">
-    <div class="page1 page1-block layout">
-        <div class="page1-flex layout11">
-            <div class="page1-flex layout1">
-                <div style="--src:url(../../../pdf_yoga/assets/5b4d540926540460a47daefe9584088b.png)"
-                    class="page1-image layout"></div>
-                <h1 class="page1-big-title layout">Yoga Hendriansyah, S.H</h1>
-                <div class="page1-flex layout">
-                    <h4 class="page1-highlights layout">I am Fullstack Developer</h4>
-                    <div class="page1-small-text-body layout">( Inertia React js + Laravel )</div>
-                </div>
-                <div class="page1-small-text-body1 layout">
-                    Jakarta Selatan 12790 | https://yoga-portfolio.herokuapp.com | +628-13-8181-9011 |
-                    yogahendriansyah@gmail.com
-                </div>
-                <hr class="page1-line layout" />
+<body>
+    <div class="v14_215">
+        <div class="v33_6">
+            <div class="v25_6">
+                <div class="v16_416"></div><span class="v16_417">Yoga Hendriansyah, S.H</span>
+                <div class="v25_3"><span class="v16_418">I am Fullstack Developer</span><span class="v16_419">( Inertia
+                        React js + Laravel )</span></div><span class="v16_420">Jakarta Selatan 12790 |
+                    https://yoga-portfolio.herokuapp.com | +628-13-8181-9011 | yogahendriansyah@gmail.com</span>
+                <div class="v25_5"></div>
             </div>
-            <div class="page1-flex layout2">
-                <div class="page1-small-text-body11 layout">ABOUT ME</div>
-                <div class="page1-small-text-body2 layout">
-                    I am Yoga Hendriansyah graduated from the Faculty of Law, Pancasila University, South Jakarta. The
-                    study
-                    program that I took during my studies at Pancasila University is Civil Law. In addition, I also have
-                    talents
-                    and hobbies in the field of information technology, because my motivation is always to learn new
-                    things to
-                    add insight and knowledge that I have in order to achieve a success in the future.
-                </div>
-                <hr class="page1-line layout1" />
+            <div class="v24_31"><span class="v16_398">ABOUT ME</span><span class="v16_393">I am Yoga Hendriansyah
+                    graduated from the Faculty of Law, Pancasila University, South Jakarta. The study program that I
+                    took during my studies at Pancasila University is Civil Law. In addition, I also have talents and
+                    hobbies in the field of information technology, because my motivation is always to learn new things
+                    to add insight and knowledge that I have in order to achieve a success in the future.</span>
+                <div class="v24_29"></div>
             </div>
-            <div class="page1-flex layout5">
-                <div class="page1-small-text-body12 layout">EXPERIENCE</div>
-                <div class="page1-flex layout3">
-                    <div class="page1-small-text-body21 layout">PT Anugrah Inti Artha Mandiri (Creat Sign)</div>
+            <div class="v33_38"><span class="v33_39">EXPERIENCE</span>
+                <div class="v33_40"><span class="v33_41">PT Anugrah Inti Artha Mandiri (Creat Sign)
+                    </span>
+                    <div class="v33_42"><span class="v33_43">As a staff Programming
+                        </span>
+                        <div class="v33_71">
+                            <div class="v33_66">
+                                <div class="v33_62">
+                                    <div class="v33_63"></div>
+                                </div><span class="v33_64">Developing and Rebuild a Administration web program for
+                                    Company (Creat Sign).
+                                </span>
+                            </div>
+                            <div class="v33_67">
+                                <div class="v33_58">
+                                    <div class="v33_59"></div>
+                                </div><span class="v33_60">Creating and developing a E-Catalog web program for PT Agya
+                                    Makmur.
+                                </span>
+                            </div>
+                            <div class="v33_68">
+                                <div class="v33_54">
+                                    <div class="v33_55"></div>
+                                </div><span class="v33_56">Creating and developing a Ecommerce web program with a team
+                                    for University of Muhammadiyah Bandung.
+                                </span>
+                            </div>
+                            <div class="v33_69">
+                                <div class="v33_36">
+                                    <div class="v33_37"></div>
+                                </div><span class="v33_51">Creating and developing a Digital Passenger (Dipass) web
+                                    program with a team for Kementerian Perhubungan Darat (Kemenhub).
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="v33_45"><span class="v33_46">Legacy FA. Ltd. (Singapore)
 
-                    <div class="page1-small-text-body3-box layout">
-                        <pre class="page1-small-text-body3">
-As a staff Programming
- </pre>
-                    </div>
-                    <div class="page1-block9 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout"></div>
-                        <div class="page1-small-text-body4 layout">
-                            Developing and Rebuild a Administration web program for Company (Creat Sign).
-                        </div>
-                    </div>
-                    <div class="page1-block9 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout"></div>
-                        <div class="page1-small-text-body5 layout">
-                            Creating and developing a E-Catalog web program for PT Agya Makmur.
-                        </div>
-                    </div>
-                    <div class="page1-block9 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout"></div>
-                        <div class="page1-small-text-body6 layout">
-                            Creating and developing a Ecommerce web program with a team for University of Muhammadiyah
-                            Bandung.
-                        </div>
-                    </div>
-                    <div class="page1-block9 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout"></div>
-                        <div class="page1-small-text-body7 layout">
-                            Creating and developing a Digital Passenger (Dipass) web program with a team for Kementerian
-                            Perhubungan
-                            Darat (Kemenhub).
-                        </div>
-                    </div>
+                    </span>
+                    <div class="v33_47"><span class="v33_48">As a Freelance Website
+                        </span><span class="v33_49">Developing and Rebuild a Administration web program for Company (AXA
+                            Insurance).</span></div>
                 </div>
-                <div class="page1-flex layout4">
-                    <div class="page1-small-text-body22-box layout">
-                        <pre class="page1-small-text-body22">
-Legacy FA. Ltd. (Singapore)
-
-</pre>
-                    </div>
-                    <div class="page1-small-text-body31-box layout">
-                        <pre class="page1-small-text-body31">
-As a Freelance Website
-</pre>
-                    </div>
-                    <div class="page1-small-text-body8 layout">
-                        Developing and Rebuild a Administration web program for Company (AXA Insurance).
-                    </div>
-                </div>
-                <hr class="page1-line layout2" />
+                <div class="v33_50"></div>
             </div>
-            <div class="page1-flex layout7">
-                <div class="page1-small-text-body13 layout">EDUCATION</div>
-                <div class="page1-flex layout6">
-                    <div class="page1-flex1 layout">
-                        <div class="page1-small-text-body23 layout">University Pancasila, Jakarta</div>
-                        <div class="page1-small-text-body9 layout">(2014 - 2020)</div>
-                    </div>
-                    <div class="page1-small-text-body41 layout">Faculty of Law - Study program civil law</div>
+            <div class="v30_110"><span class="v30_79">EDUCATION</span>
+                <div class="v30_108">
+                    <div class="v30_107"><span class="v30_80">University Pancasila, Jakarta</span><span
+                            class="v30_87">(2014 - 2020)</span></div><span class="v30_83">Faculty of Law - Study program
+                        civil law</span>
                 </div>
-                <div class="page1-flex2 layout">
-                    <div class="page1-small-text-body24 layout">Senior High School 60, Jakarta</div>
-                    <div class="page1-small-text-body10 layout">(2011 – 2014)</div>
-                </div>
-                <hr class="page1-line layout3" />
+                <div class="v30_109"><span class="v30_84">Senior High School 60, Jakarta</span><span
+                        class="v30_88">(2011 – 2014)</span></div>
+                <div class="v30_111"></div>
             </div>
-            <div class="page1-flex layout8">
-                <div class="page1-small-text-body14 layout">ORGANIZATIONAL EXPERIENCE</div>
-                <div class="page1-block16 layout">
-                    <div class="page1-block17 layout">
-                        <div class="page1-small-text-body15 layout">
-                            Committee for Introduction to Campus Life for New Students (PKKMB)
-                        </div>
-                        <div class="page1-small-text-body16 layout">(2018)</div>
+            <div class="v30_170"><span class="v30_112">ORGANIZATIONAL EXPERIENCE</span>
+                <div class="v30_169">
+                    <div class="v32_174"><span class="v30_113">Committee for Introduction to Campus Life for New
+                            Students (PKKMB)</span><span class="v32_172">(2018)</span></div>
+                    <div class="v30_139">
+                        <div class="v30_134">
+                            <div class="v30_135"></div>
+                        </div><span class="v30_136">As Public Relation (PR)
+                        </span>
                     </div>
-                    <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout1"></div>
-                        <div class="page1-small-text-body17 layout">As Public Relation (PR)</div>
-                    </div>
-                    <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout2"></div>
-                        <div class="page1-small-text-body18 layout">and Liasion Officer</div>
+                    <div class="v30_140">
+                        <div class="v30_142">
+                            <div class="v30_143"></div>
+                        </div><span class="v30_141">and Liasion Officer</span>
                     </div>
                 </div>
-                <div class="page1-block16 layout1">
-                    <div class="page1-block17 layout">
-                        <div class="page1-small-text-body19 layout">Committee Performing Art Festival Mahakarya</div>
-                        <div class="page1-small-text-body20 layout">(2017)</div>
+                <div class="v30_168">
+                    <div class="v32_176"><span class="v30_146">Committee Performing Art Festival Mahakarya
+                        </span><span class="v32_175">(2017)</span></div>
+                    <div class="v30_147">
+                        <div class="v30_149">
+                            <div class="v30_150"></div>
+                        </div><span class="v30_148">As Public Relation (PR)</span>
                     </div>
-                    <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout3"></div>
-                        <div class="page1-small-text-body25 layout">As Public Relation (PR)</div>
-                    </div>
-                    <div class="page1-block18 layout">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout4"></div>
-                        <div class="page1-small-text-body26 layout">and Documentation</div>
+                    <div class="v30_151">
+                        <div class="v30_153">
+                            <div class="v30_154"></div>
+                        </div><span class="v30_152">and Documentation</span>
                     </div>
                 </div>
-                <div class="page1-block19 layout">
-                    <div class="page1-block17 layout1">
-                        <div class="page1-small-text-body27 layout">Committee Performing Art Festival Starcity Cup</div>
-                        <div class="page1-small-text-body28 layout">(2013)</div>
-                    </div>
-                    <div class="page1-block18 layout1">
-                        <div style="--src:url(../../../pdf_yoga/assets/e8670b7994f659ab7707e82b2da35378.png)"
-                            class="page1-icon layout5"></div>
-                        <div class="page1-small-text-body29 layout">Security Section</div>
+                <div class="v30_167">
+                    <div class="v33_73"><span class="v30_156">Committee Performing Art Festival Starcity Cup</span><span
+                            class="v33_72">(2013)</span></div>
+                    <div class="v30_157">
+                        <div class="v30_159">
+                            <div class="v30_160"></div>
+                        </div><span class="v30_158">Security Section
+                        </span>
                     </div>
                 </div>
-                <hr class="page1-line layout4" />
+                <div class="v32_171"></div>
             </div>
-            <div class="page1-group layout1">
-                <div class="page1-small-text-body110 layout">PROJECTS</div>
-                <div class="page1-flex layout9">
-                    <div class="page1-block14 layout">
-                        <div class="page1-small-text-body210 layout">Simple Social Network</div>
-                        <div class="page1-small-text-body30 layout">(November 2021 - January 2023)</div>
+            <div class="v33_117"><span class="v33_118">PROJECTS</span>
+                <div class="v33_119">
+                    <div class="v33_120">
+                        <div class="v33_121"><span class="v33_122">Simple Social Network
+                            </span><span class="v33_123">(November 2021 - January 2023)</span></div>
+                        <div class="name"></div><span class="v33_125">( With Laravel 8 )</span>
                     </div>
-                    <div class="page1-flex-item">
-                        <div class="page1-small-text-body51 layout">http://yoga-social-network.herokuapp.com</div>
+                    <div class="v33_126">
+                        <div class="v33_127"><span class="v33_128">Inventory Store Product</span><span
+                                class="v33_129">(January 2022 - March 2022)</span></div>
+                        <div class="name"></div><span class="v33_131">( Laravel 8 + Vue/Vuex )</span>
                     </div>
-                    <div class="page1-small-text-body61 layout">( With Laravel 8 )</div>
+                    <div class="v33_132">
+                        <div class="v33_133"><span class="v33_134">E-commerce</span><span class="v33_135">(January 2022
+                                - March 2022)</span></div>
+                        <div class="name"></div><span class="v33_137">( Laravel 8 (sanctum) + React js )</span>
+                    </div>
                 </div>
-                <div class="page1-flex layout10">
-                    <div class="page1-flex3 layout">
-                        <div class="page1-small-text-body211 layout">Inventory Store Product</div>
-                        <div class="page1-small-text-body32 layout">(January 2022 - March 2022)</div>
-                    </div>
-                    <div class="page1-flex-item">
-                        <div class="page1-small-text-body52 layout">http://yoga-inventory-store.herokuapp.com</div>
-                    </div>
-                    <div class="page1-small-text-body62 layout">( Laravel 8 + Vue/Vuex )</div>
-                </div>
-                <div class="page1-group layout">
-                    <div class="page1-flex4 layout">
-                        <div class="page1-small-text-body212 layout">E-commerce</div>
-                        <div class="page1-small-text-body33 layout">(January 2022 - March 2022)</div>
-                    </div>
-                    <div class="page1-small-text-body53 layout">https://yoga-ecommerce.herokuapp.com</div>
-                    <div class="page1-small-text-body63 layout">( Laravel 8 (sanctum) + React js )</div>
-                </div>
-                <hr class="page1-line layout5" />
+                <div class="v33_141"></div>
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        AOS.init();
-    </script>
 </body>
 
-</html>
+</html> <br /><br />
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .v14_215 {
+        width: 595px;
+        height: 842px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_6 {
+        width: 595px;
+        height: 822px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v25_6 {
+        width: 595px;
+        height: 235px;
+        background: url("../images/v25_6.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin: 4px;
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v16_416 {
+        width: 90px;
+        height: 108px;
+        background: url("../images/v16_416.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 252px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+    }
+
+    .v16_417 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 112px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Bold;
+        font-size: 28px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v25_3 {
+        width: 565px;
+        height: 45px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 158px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v16_418 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 18px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v16_419 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 27px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v16_420 {
+        width: 565px;
+        color: rgba(0, 0, 0, 0.7099999785423279);
+        position: absolute;
+        top: 207px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v25_5 {
+        width: 565px;
+        background: url("../images/v25_5.png");
+        opacity: 1;
+        position: absolute;
+        top: 235px;
+        left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.4000000059604645);
+    }
+
+    .v24_31 {
+        width: 595px;
+        height: 54px;
+        background: url("../images/v24_31.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 235px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v16_398 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Bold Italic;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v16_393 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v24_29 {
+        width: 565px;
+        background: url("../images/v24_29.png");
+        opacity: 1;
+        position: absolute;
+        top: 54px;
+        left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.4000000059604645);
+    }
+
+    .v33_38 {
+        width: 595px;
+        height: 156px;
+        background: url("../images/v33_38.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 289px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_39 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Bold Italic;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v33_40 {
+        width: 565px;
+        height: 84px;
+        background: url("../images/v33_40.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v33_41 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: SemiBold;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v33_42 {
+        width: 565px;
+        height: 66px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_43 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Light Italic;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v33_71 {
+        width: 565px;
+        height: 48px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_66 {
+        width: 565px;
+        height: 12px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_62 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_63 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+
+    .v33_64 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_67 {
+        width: 565px;
+        height: 12px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 12px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_58 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_59 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+
+    .v33_60 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_68 {
+        width: 565px;
+        height: 12px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 24px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_54 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_55 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+
+    .v33_56 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_69 {
+        width: 565px;
+        height: 12px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 36px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_36 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_37 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+
+    .v33_51 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_45 {
+        width: 565px;
+        height: 54px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 102px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v33_46 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: SemiBold;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v33_47 {
+        width: 565px;
+        height: 36px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_48 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Light Italic;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_49 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_50 {
+        width: 565px;
+        background: url("../images/v33_50.png");
+        opacity: 1;
+        position: absolute;
+        top: 156px;
+        left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.4000000059604645);
+    }
+
+    .v30_110 {
+        width: 595px;
+        height: 64px;
+        background: url("../images/v30_110.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 445px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_79 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Bold Italic;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v30_108 {
+        width: 565px;
+        height: 28px;
+        background: url("../images/v30_108.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v30_107 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        margin: 402px;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_80 {
+        width: 113px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: SemiBold;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v30_87 {
+        width: 50px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 515px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .v30_83 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 10px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v30_109 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        margin: 400px;
+        opacity: 1;
+        position: absolute;
+        top: 46px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v30_84 {
+        width: 118px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: SemiBold;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v30_88 {
+        width: 47px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 518px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .v30_111 {
+        width: 565px;
+        background: url("../images/v30_111.png");
+        opacity: 1;
+        position: absolute;
+        top: 64px;
+        left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.4000000059604645);
+    }
+
+    .v30_170 {
+        width: 595px;
+        height: 157px;
+        background: url("../images/v30_170.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 509px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_112 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Bold Italic;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v30_169 {
+        width: 565px;
+        height: 54px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v32_174 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_113 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v32_172 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 283px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .v30_139 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_134 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_135 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+    }
+
+    .v30_136 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v30_140 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 36px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_142 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_143 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+    }
+
+    .v30_141 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v30_168 {
+        width: 565px;
+        height: 54px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 72px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v32_176 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_146 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v32_175 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 283px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .v30_147 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_149 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_150 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+    }
+
+    .v30_148 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v30_151 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 36px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_153 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_154 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+    }
+
+    .v30_152 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v30_167 {
+        width: 565px;
+        height: 31px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 126px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v33_73 {
+        width: 565px;
+        height: 18px;
+        background: url("../images/v33_73.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_156 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_72 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 283px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .v30_157 {
+        width: 565px;
+        height: 18px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_159 {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v30_160 {
+        width: 1px;
+        height: 1px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+    }
+
+    .v30_158 {
+        width: 555px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v32_171 {
+        width: 565px;
+        background: url("../images/v32_171.png");
+        opacity: 1;
+        position: absolute;
+        top: 157px;
+        left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.4000000059604645);
+    }
+
+    .v33_117 {
+        width: 595px;
+        height: 156px;
+        background: url("../images/v33_117.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 666px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_118 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        font-family: Poppins;
+        font-weight: Bold Italic;
+        font-size: 12px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v33_119 {
+        width: 565px;
+        height: 138px;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        overflow: hidden;
+    }
+
+    .v33_120 {
+        width: 565px;
+        height: 46px;
+        background: url("../images/v33_120.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_121 {
+        width: 565px;
+        height: 18px;
+        background: url("../images/v33_121.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_122 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: SemiBold;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_123 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 283px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .name {
+        color: #fff;
+    }
+
+    .v33_125 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 31px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: ExtraLight;
+        font-size: 10px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_126 {
+        width: 565px;
+        height: 46px;
+        background: url("../images/v33_126.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 46px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_127 {
+        width: 565px;
+        height: 18px;
+        background: url("../images/v33_127.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_128 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: SemiBold;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_129 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 283px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .name {
+        color: #fff;
+    }
+
+    .v33_131 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 31px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: ExtraLight;
+        font-size: 10px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_132 {
+        width: 565px;
+        height: 46px;
+        background: url("../images/v33_132.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 92px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_133 {
+        width: 565px;
+        height: 18px;
+        background: url("../images/v33_133.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v33_134 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: SemiBold;
+        font-size: 12px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_135 {
+        width: 282px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0px;
+        left: 283px;
+        font-family: Poppins;
+        font-weight: Regular;
+        font-size: 12px;
+        opacity: 1;
+        text-align: right;
+    }
+
+    .name {
+        color: #fff;
+    }
+
+    .v33_137 {
+        width: 565px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 31px;
+        left: 0px;
+        font-family: Poppins;
+        font-weight: ExtraLight;
+        font-size: 10px;
+        opacity: 1;
+        text-align: justified;
+    }
+
+    .v33_141 {
+        width: 565px;
+        background: url("../images/v33_141.png");
+        opacity: 1;
+        position: absolute;
+        top: 156px;
+        left: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.4000000059604645);
+    }
+
+</style>

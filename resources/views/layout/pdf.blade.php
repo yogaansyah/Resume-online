@@ -106,7 +106,7 @@ margin-bottom:0cm;margin-left:14.2pt;text-align:center;line-height:normal'><span
                 Fullstack Developer</span></p>
 
         <p class=MsoNormal align=center style='margin-top:0cm;margin-right:18.35pt;
-margin-bottom:0cm;margin-left:14.2pt;text-align:center;line-height:normal'><span style='font-size:14.0pt'>�( Inertia
+margin-bottom:0cm;margin-left:14.2pt;text-align:center;line-height:normal'><span style='font-size:14.0pt'>( Inertia
                 React js + Laravel )</span></p>
 
         <p class=MsoNormal align=center style='margin-top:9.2pt;margin-right:7.0pt;
@@ -170,7 +170,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
                     </p>
                     <p class=MsoNormal align=right style='margin-top:0cm;margin-right:8.9pt;
   margin-bottom:0cm;margin-left:2.7pt;text-align:right;line-height:normal'><span style='font-size:10.0pt'>(Desember
-                            2020 � March 2021)</span></p>
+                            2020 - March 2021)</span></p>
                 </td>
             </tr>
             <tr style='height:26.5pt'>
@@ -178,7 +178,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
   height:26.5pt'>
                     <p class=MsoBodyText style='margin-top:0cm;margin-right:14.1pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>�<span
+  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif;color:#202020'>Creating<span
                                 style='letter-spacing:.95pt'> </span>and<span style='letter-spacing:.95pt'>
@@ -194,7 +194,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
                             </span>(Kemenhub).</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:14.1pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>�<span
+  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif;color:#202020'>Creating<span
                                 style='letter-spacing:.9pt'> </span>and<span style='letter-spacing:.95pt'>
@@ -208,13 +208,13 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
                             </span>Bandung.</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:14.1pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol;color:#202020'>�<span
+  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol;color:#202020'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif;color:#202020'>Creating
                             and developing a E-Catalog web program for PT Agya Makmur.</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:14.1pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-family:Symbol'>�<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  -14.2pt'><span style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </span></span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
   color:#202020'>Developing<span style='letter-spacing:.9pt'> </span>and<span style='letter-spacing:.9pt'>
                             </span>Rebuild<span style='letter-spacing:.95pt'>
@@ -257,7 +257,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
                 <td width="100%" colspan=2 valign=top style='width:100.0%;padding:0cm 5.4pt 0cm 5.4pt;
   height:26.5pt'>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
-  12.0pt;margin-left:15.9pt;text-align:justify;text-indent:-14.2pt'><span style='font-family:Symbol'>�<span
+  12.0pt;margin-left:15.9pt;text-align:justify;text-indent:-14.2pt'><span style='font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </span></span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
   color:#202020'>Developing<span style='letter-spacing:.9pt'> </span>and<span style='letter-spacing:.9pt'>
@@ -316,7 +316,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
   height:18.05pt'>
                     <p class=MsoBodyText align=right style='margin-top:.1pt;margin-right:8.3pt;
   margin-bottom:12.0pt;margin-left:7.1pt;text-align:right'><span
-                            style='font-size:10.0pt;font-family:"Calibri",sans-serif'>(2011 � 2014)</span></p>
+                            style='font-size:10.0pt;font-family:"Calibri",sans-serif'>(2011 - 2014)</span></p>
                 </td>
             </tr>
         </table>
@@ -344,13 +344,13 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
                             Introduction to Campus Life for New Students (PKKMB) | 2018</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>�<span
+  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif'>As Public Relation
                             (PR)</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>�<span
+  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif'>and Liasion Officer</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
@@ -359,13 +359,13 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
                             Performing Art Festival Mahakarya | 2017</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>�<span
+  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif'>As Public Relation
                             (PR)</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
   0cm;margin-left:15.9pt;margin-bottom:.0001pt;text-align:justify;text-indent:
-  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>�<span
+  -14.2pt'><span style='font-size:12.0pt;font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                             style='font-size:12.0pt;font-family:"Calibri",sans-serif'>and Documentation</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
@@ -374,7 +374,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
                             Performing Art Festival Starcity Cup | 2013</span></p>
                     <p class=MsoBodyText style='margin-top:.1pt;margin-right:22.5pt;margin-bottom:
   12.0pt;margin-left:15.9pt;text-align:justify;text-indent:-14.2pt'><span
-                            style='font-size:12.0pt;font-family:Symbol'>�<span
+                            style='font-size:12.0pt;font-family:Symbol'>-<span
                                 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
                             </span></span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif'>Security
                             Section</span></p>
@@ -589,7 +589,7 @@ color:#404040;letter-spacing:1.0pt'><a href="https://yoga-portfolio.herokuapp.co
   height:8.15pt'>
                     <p class=MsoBodyText align=right style='margin-top:.1pt;margin-right:22.5pt;
   margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:right'><span
-                            style='font-size:12.0pt;font-family:"Calibri",sans-serif;color:black'>70%</span></p>
+                            style='font-size:12.0pt;font-family:"Calibri",sans-serif;color:black'>80%</span></p>
                 </td>
                 <td width="41%" valign=top style='width:41.26%;background:white;padding:0cm 5.4pt 0cm 5.4pt;
   height:8.15pt'>
