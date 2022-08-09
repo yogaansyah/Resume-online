@@ -128,7 +128,6 @@
                                     </div>
                                     <div class="meta">
                                         <span>
-                                            <i class="feather-clock"></i>
                                             2012
                                         </span>
                                     </div>
