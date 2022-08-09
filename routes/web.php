@@ -17,14 +17,14 @@ use App\Http\Controllers\ContactController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
-    return view('layout.pdf2');
-});
-
-
 // Route::get('/', function () {
-//     return view('master');
+//     return view('layout.pdf2');
 // });
+
+
+Route::get('/', function () {
+    return view('master');
+});
 
 Route::post('/sendemail', [ContactController::class, 'sendemail'])->name('sendemail');
 Route::get('/pdf', [ContactController::class, 'pdf'])->name('pdf');
