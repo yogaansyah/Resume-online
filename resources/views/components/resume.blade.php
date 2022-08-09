@@ -234,7 +234,7 @@
                                                         as a Freelance Website
                                                     </i>
                                                     <span>
-                                                        (January 2022 – April 2022)
+                                                        (January 2022 – May 2022)
                                                     </span>
                                                 </div>
                                             </div>
