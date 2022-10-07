@@ -111,10 +111,7 @@
                                     <div class="col-lg-12 mb-5">
                                         <div class="form-group ">
                                             <div class="g-recaptcha" data-sitekey="6Le2NTEhAAAAAEEYz8kF2RfP2m6Zlgf_kEt9ey-g"></div>
-                                            {{-- <div name='captcha' id="example1"></div> --}}
 
-                                            {{-- {!! NoCaptcha::renderJs('en') !!}
-                                            {!! NoCaptcha::display() !!} --}}
 
                                             <div class="text-danger" id="captchaErrorMsg" name='captch1'></div>
                                         </div>
